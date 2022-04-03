@@ -1,0 +1,316 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* ***************************** */
+/* styling for Header component */
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	padding: 15px 80px;
+	height: 10vh;
+	background-color: rgb(192, 230, 243);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.193);
+	z-index: 100;
+}
+.button {
+	margin: 10px;
+}
+.logo {
+	color: black;
+	text-decoration: none;
+}
+
+/* ********************** */
+/* styling for blog form */
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.form-title-input-container {
+	display: flex;
+	flex-direction: column;
+}
+.form-text-input-container {
+	display: flex;
+	flex-direction: column;
+}
+.form-label {
+	margin: 30px 0 10px 10px;
+	font-size: 1.3rem;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.form-title-input {
+	padding: 15px;
+	width: 80vw;
+	font-size: 2.2rem;
+	font-weight: 900;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	background-color: rgba(250, 235, 215, 0.822);
+}
+.form-textarea {
+	width: 80vw;
+	height: 100vh;
+	font-size: 1.5rem;
+	font-weight: 200;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	padding: 15px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	background-color: rgba(250, 235, 215, 0.822);
+	line-height: 35px;
+}
+.form-error-message {
+	color: red;
+	background-color: rgba(255, 0, 0, 0.192);
+	width: max-content;
+	padding: 5px;
+	border-radius: 10px;
+	margin-bottom: 8px;
+}
+.form-button {
+	width: max-content;
+	padding: 12px 50px;
+	font-size: 1.01rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #c0e6f3;
+	border: 5px solid #01b0eb;
+	color: black;
+	cursor: pointer;
+	margin-top: 20px;
+}
+.form-button:hover {
+	background-color: #7edcfc;
+}
+
+/* ************************* */
+/* styling for landing page */
+
+.landing-page {
+	width: 100vw;
+	height: 100%;
+}
+.page-top {
+	width: 100%;
+	height: 50vh;
+	margin-top: 10vh;
+	background: #f3d4d9;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.page-top h1 {
+	color: rgb(52, 199, 248);
+	font-size: 4rem;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.page-top p {
+	font-size: 1.4rem;
+	text-align: center;
+	margin: 15px;
+	color: rgba(0, 0, 0, 0.726);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.user-name {
+	color: rgb(52, 199, 248);
+	font-size: 4rem;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	margin-bottom: 30px;
+}
+.blog-write-button {
+	padding: 12px 50px;
+	font-size: 1.01rem;
+	border: none;
+	border-radius: 50px;
+	background-color: #34c7f8;
+	color: white;
+	cursor: pointer;
+}
+.blog-write-button:hover {
+	background-color: #01b0eb;
+}
+
+/* *************************** */
+/* styling for blog show page */
+
+.blog-show-container {
+	width: 100vw;
+	position: relative;
+}
+.blog-show-loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3rem;
+	margin-top: 200px;
+}
+.blog-container {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	background-color: rgba(250, 235, 215, 0.562);
+	border-radius: 8px;
+	margin-top: 12vh;
+	margin-bottom: 25px;
+	padding: 120px;
+}
+.home-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 12px 50px;
+	font-size: 1.01rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #34c7f8;
+	color: white;
+	cursor: pointer;
+}
+.blog-heading {
+	font-size: 4rem;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom: 50px;
+}
+.blog-text {
+	font-size: 1.7rem;
+	font-weight: 200;
+	line-height: 40px;
+	color: rgb(53, 52, 52);
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* ********************** */
+/* styling the blog list */
+
+.card-link {
+	text-decoration: none;
+	color: black;
+}
+.blog-cards-container {
+	width: 100vw;
+	background-color: rgba(173, 216, 230, 0.397);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+.blog-cards-container > h1 {
+	font-size: 3rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	margin: 40px;
+}
+.cards-list {
+	position: relative;
+	width: 95%;
+	margin: auto;
+	background-color: lightblue;
+	border-radius: 8px;
+	padding: 20px;
+	padding-top: 100px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 10px;
+}
+.blog-card {
+	position: relative;
+	background-color: lightgreen;
+	padding: 10px;
+	border: 5px solid #01b0eb;
+	border-radius: 8px;
+	height: 200px;
+}
+.blog-card-title {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 2rem;
+	margin-bottom: 15px;
+}
+.blog-card-text {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 1.2rem;
+	padding-right: 50px;
+	margin-top: 10px;
+}
+.my-blogs-button {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	padding: 12px 50px;
+	font-size: 1.01rem;
+	border: none;
+	border-radius: 50px;
+	background-color: #34c7f8;
+	color: white;
+	cursor: pointer;
+}
+.all-blogs-button {
+	right: 195px;
+}
+.my-blogs-button:hover {
+	background-color: #01b0eb;
+}
+.edit-icon {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	padding: 5px;
+	border-radius: 50px;
+}
+.trash-icon {
+	position: absolute;
+	top: 5px;
+	right: 30px;
+	padding: 5px;
+	border-radius: 50px;
+}
+.trash-icon:hover {
+	background: rgb(49, 158, 49);
+}
+.edit-icon:hover {
+	background: rgb(49, 158, 49);
+}
+
+/* ********************* */
+/* blog write page */
+
+.blog-write-home-button {
+	position: absolute;
+	top: 150px;
+	right: 80px;
+	padding: 10px 40px;
+	font-size: 1rem;
+	border: none;
+	border-radius: 10px;
+	background-color: #34c7f8;
+	color: white;
+	cursor: pointer;
+}
+
+/* ******************** */
+/* blog edit page */
+
+.blog-edit-page {
+	width: 100vw;
+	height: 100%;
+	display: flex;
+	padding-top: 150px;
+	padding-left: 100px;
+	flex-direction: column;
+}
