@@ -10,7 +10,7 @@ const GoogleAuth = () => {
 	const { logIn, logOut } = bindActionCreators(actionCreators, dispatch);
 
 	const onLogInSuccess = (response) => {
-		logIn(response.Du.FW, response.Du.VX);
+		logIn(response.profileObj.googleId, response.profileObj.name);
 	};
 	const onLogOutSuccess = () => {
 		logOut();

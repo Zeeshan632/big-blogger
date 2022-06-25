@@ -6,7 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import BlogShow from "./pages/BlogShow";
 import BlogWrite from "./pages/BlogWrite";
 import BlogEdit from "./pages/BlogEdit";
-import "./styling.css";
+// import "./styling.css";
 
 const App = () => {
 	return (
